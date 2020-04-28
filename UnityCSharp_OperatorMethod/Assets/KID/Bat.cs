@@ -22,14 +22,14 @@ public class Bat : MonoBehaviour
     public void Damage(float damage)
     {
         hp -= damage;
-        message.text =  gameObject.name + " - 受到傷害：" + damage;
-        message.text += "\n" + gameObject.name + " - 血量剩下：" + hp;
+        message.text = "<color=#213022>" + gameObject.name + "</color> - 受到傷害：" + damage;
+        message.text += "\n" + "<color=#213022>" + gameObject.name + "</color> - 血量剩下：" + hp;
     }
 
     public void Cure()
     {
         hp += cure;
-        message.text =  gameObject.name + " - 收到治癒：" + cure;
-        message.text += "\n" + gameObject.name + " - 血量剩下：" + hp;
+        message.text = "<color=#213022>" + gameObject.name + "</color> - 收到治癒：" + cure;
+        message.text += "\n" + "<color=#213022>" + gameObject.name + " -</color> 血量剩下：" + hp;
     }
 }
